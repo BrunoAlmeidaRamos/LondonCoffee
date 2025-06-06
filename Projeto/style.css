@@ -89,3 +89,61 @@ header {
     font-family: "Font Awesome 6 Brands";
     margin-left: 0.6em;
 }
+
+.imgFundo2 {
+    background: linear-gradient(180deg, #0f0d09b6), url(img/imgFundo_historia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90em;
+    color: white;
+    padding: 6em 25em;
+}
+
+.containerHistoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.containerHistoria p {
+    font-size: 2em;
+}
+
+.containerHistoria h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    padding: 1em 0;
+}
+
+.imgHistoria img {
+    width: 30em;
+}
+
+.grind {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1em;
+    padding-top: 6em;
+}
+
+.grind img {
+    width: 6em;
+}
+
+.conteudo {
+    width: 80%;
+    border-right: 1px solid #3C3F47;
+    height: 15em;
+}
+
+.expresso {
+    border: none;
+}
+
+.conteudo p {
+    font-size: 2em;
+    padding-top: 1em;
+}
