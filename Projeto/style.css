@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 0.3rem 5%;
 }
 
 .menu img {
@@ -33,7 +33,7 @@ header {
 
 .menu nav ul li a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .menu nav ul li a:hover {
@@ -47,7 +47,7 @@ header {
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 60em;
+    height: 55em;
 }
 
 .Cafeteria {
@@ -57,13 +57,13 @@ header {
 }
 
 .Cafeteria p {
-    font-size: 1.2em;
+    font-size: 1em;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .Cafeteria h1 {
-    font-size: 7em;
+    font-size: 5em;
     padding: 0.3em 0;
 }
 
@@ -109,11 +109,11 @@ header {
 }
 
 .containerHistoria p {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .containerHistoria h2 {
-    font-size: 4em;
+    font-size: 2em;
     text-transform: uppercase;
     padding: 1em 0;
 }
@@ -124,7 +124,7 @@ header {
 
 .grind {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1em;
     padding-top: 6em;
 }
@@ -150,4 +150,348 @@ header {
 
 .ContainerDepoimentos {
     background-color: #DBC893;
+    width: 100%;
+    height: 55em;
+    padding: 3em 1em;
+}
+
+.Depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Depoimento img {
+    width: 8em;
+}
+
+.Depoimento h4 {
+    font-size: 3em;
+}
+
+.gridDepoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+
+}
+
+.stars {
+    color: gold;
+    font-size: 0.8em;
+}
+
+.comentario {
+    width: 50%;
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+.nome {
+    display: flex;
+    gap: 1em;
+}
+
+.name {
+    font-weight: 800;
+}
+
+.dia {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.box-1 {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.box-1:hover {
+    margin-left: 2em;
+    transition: 1s;
+}
+
+.box-2 {
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.box-2:hover {
+    margin-left: 2em;
+    transition: 1s;
+}
+
+.box-3 {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.box-3:hover {
+    margin-left: 2em;
+    transition: 1s;
+}
+
+.imgFundo3 {
+    background: linear-gradient(180deg, #0f0d09b6), url(img/imgFundo_historia.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.containerSobreNos {
+    padding: 5em 3em;
+    display: flex;
+    gap: 3em;
+    color: white;
+    align-items: center;
+}
+
+.imagens {
+    display: flex;
+}
+
+.imagens img {
+    width: 28em;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.sobreNos {
+    width: 40em;
+}
+
+.sobreNos h2 {
+    font-size: 4em;
+    padding-bottom: 1em;
+}
+
+.sobreNos p {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+
+}
+
+.pedidos {
+    padding: 2em 0;
+}
+
+.pedidos p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.pedidos p::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    /* ou 5 Free, dependendo da versão */
+    font-weight: 900;
+    /* 900 é necessário para ícones sólidos */
+    margin-left: 0.6em;
+    color: #856F38;
+    padding-right: 1em;
+}
+
+.facaPedido {
+    width: 15em;
+    height: 3em;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: #856F38;
+    color: white;
+    border: 1px solid white;
+}
+
+.facaPedido:hover {
+    color: #856F38;
+    background-color: #DBC893;
+    transition: 0.7s;
+    outline: none;
+}
+
+.facaPedido::after {
+    content: "\f232";
+    font-family: "Font Awesome 6 Brands";
+    margin-left: 0.6em;
+}
+
+
+.containerCardapio {
+    background-color: #0E0B05;
+    height: 40em;
+}
+
+.gridCardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1em;
+    padding: 0 1em;
+}
+
+.cardapio {
+    height: 20em;
+    width: 100%;
+}
+
+.estabelecimento {
+    background-image: url(img/estabelecimento.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.panqueca {
+    background-image: url(img/panqueca.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.placa {
+    background-image: url(img/placa.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.cafe {
+    background-image: url(img/cafe.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.Ifood {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.containerCardapio img {
+    width: 12em;
+    padding-top: 2em;
+}
+
+
+.containerInsta {
+    background: linear-gradient(180deg, #0f0d09b6), url(img/fundo_graos.png);
+    height: 35em;
+}
+
+
+.instagram {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    font-size: 1.5em;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.gridInstagram {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1em;
+    height: 20em;
+    padding: 0 3em;
+}
+
+.skeike {
+    background-image: url(img/sheik.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.preparo {
+    background-image: url(img/preparo.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.manha {
+    background-image: url(img/pao_de_queijo.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.drinks {
+    background-image: url(img/drinks.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.doce {
+    background-image: url(img/panqueca_com_chocolate.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.morango {
+    background-image: url(img/bolo_morango.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.map {
+    height: 25em;
+    width: 100%;
+}
+
+.ContainerRodape {
+    width: 100%;
+    background-color: #202A33;
+    color: white;
+    padding: 2em 5em;
+    border-top: 5px solid #DBC893;
+}
+
+.infos img {
+    width: 12em;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 2em;
+    padding-bottom: 2em;
+}
+
+.infos .email {
+    border-bottom: 1px solid ;
+}
+
+.rodapeInfos {
+    font-size: 1.8em;
+    padding-bottom: 1em;
+}
+
+.linha {
+   border: 1px solid gray;
+   width: 100%;
+}
+
+.politica {
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-whats {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 50%;
+    width: 2.7rem;
+    height: 2.7rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    text-decoration: none;
 }
