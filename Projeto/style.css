@@ -42,18 +42,18 @@ header {
 }
 
 .imgFundo {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.692) 25%), url(img/imgFundo_home.webp);
+    background-image: url(img/imgFundo_home.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 100%;
-    height: 55em;
+   
 }
 
 .Cafeteria {
     color: white;
     padding: 7em 20em;
-    width: 55%;
+    width: 100%;
+    height: 40em;
 }
 
 .Cafeteria p {
@@ -91,14 +91,10 @@ header {
 }
 
 .imgFundo2 {
-    background: linear-gradient(180deg, #0f0d09b6), url(img/imgFundo_historia.png);
+    background-image: url(img/imgFundo_historia.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 90em;
-    color: white;
-    padding: 6em 25em;
 }
 
 .containerHistoria {
@@ -106,10 +102,14 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2em;
+    width: 100%;
+    height: 50em;
+    padding: 6em 15em;
+    color: white;
 }
 
 .containerHistoria p {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .containerHistoria h2 {
@@ -119,14 +119,15 @@ header {
 }
 
 .imgHistoria img {
-    width: 30em;
+    width: 20em;
 }
 
 .grind {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1em;
-    padding-top: 6em;
+    padding: 0 5em 2em 7em;
+    color: white;
 }
 
 .grind img {
@@ -235,7 +236,7 @@ header {
 }
 
 .imgFundo3 {
-    background: linear-gradient(180deg, #0f0d09b6), url(img/imgFundo_historia.png);
+    background-image: url(img/imgFundo_historia.png);
     background-position: center center;
     background-size: cover;
 }
@@ -372,7 +373,7 @@ header {
 
 
 .containerInsta {
-    background: linear-gradient(180deg, #0f0d09b6), url(img/fundo_graos.png);
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url(img/fundo_graos.png);
     height: 35em;
 }
 
@@ -386,6 +387,7 @@ header {
     font-size: 1.5em;
     gap: 0.5em;
     cursor: pointer;
+    
 }
 
 .gridInstagram {
