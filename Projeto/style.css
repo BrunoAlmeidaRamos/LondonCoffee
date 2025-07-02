@@ -22,6 +22,10 @@ header {
     padding: 0.3rem 5%;
 }
 
+#menu {
+    display: none;
+}
+
 .menu img {
     width: 20em;
 }
@@ -496,4 +500,75 @@ header {
     justify-content: center;
     z-index: 999;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        right: 1em;
+    }
+
+    #itens ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #202A33;
+        /* ou outra cor de fundo */
+        width: 100%;
+        padding: 1em;
+        position: absolute;
+        top: 100%;
+        /* colado embaixo do menu */
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+
+        /* Transição suave */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.9s ease, opacity 0.9s ease;
+    }
+
+    #itens ul.show {
+        display: flex;
+        /* só aparece quando tiver a classe "show" */
+        max-height: 500px;
+        /* valor grande o suficiente pro conteúdo caber */
+        opacity: 1;
+    }
+
+    .Cafeteria {
+       padding: 2em;
+    }
+    .Cafeteria p {
+        font-size: 1.5em;
+    }
+    .containerHistoria {
+        padding: 1.5em;
+    }
+    .containerHistoria h2 {
+        font-size: 2em;
+    }
+    .grind {
+       display: none;
+    }
+    .containerSobreNos {
+        display: none;
+    }
+
+    .containerCardapio {
+        display: none;
+    }
+
+    .ContainerRodape {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
 }
